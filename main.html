@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/images/icon.png">
+    <title>JSONPlaceholder - Free Fake REST API</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <a class="nav-link" title="Go to actual site of JSONPlaceholder" style="font-weight: 500;color: black;" href="https://jsonplaceholder.typicode.com">JSONPlaceholder</a>
+              <li class="nav-item">        
+                <a class="nav-link" title="Go to photos page" aria-current="page" href="./link_HTML/photos.html">Photos</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" title="Go to photos page"  href="./link_HTML/comments.html">Comments</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" title="Go to albums page"  href="./link_HTML/albums.html">Albums</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="Go to posts page"  href="./link_HTML/posts.html">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="Go to todos page"  href="./link_HTML/todos.html">Todos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="Go to users page"  href="./link_HTML/users.html">Users</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="container-fluid my-5">
+        <div class="row">
+          <div class="col-md-12 header-json">
+            <h1>{JSON} Placeholder</h1>
+            <div class="paragraph-group my-4">
+              <p class="free">Free fake API for testing and prototyping.</p>
+              <p class="powered">Powered by <a href="https://github.com/typicode/json-server">JSON Server</a> + <a href="https://github.com/typicode/lowdb">LowDB</a>. Tested with <a href="https://github.com/typicode/xv">XV</a></p>
+            </div>
+            <b>Serving ~2 billion requests each month.</b>
+          </div>
+        </div>
+      </div>
+          
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-6 offset-3 sponsor-json">
+            <h3><span>Sponsors</span></h3>
+            <p>JSONPlaceholder is supported by the following companies and <a style="color: #374151;" href="https://github.com/sponsors/typicode">Sponsors</a> on GitHub, check them out 💖
+            </p>
+            <div class="img-group">
+              <a href="https://tryretool.com/?utm_source=sponsor&amp;utm_campaign=typicode" target="_blank">
+                <img class="retool" src="./assets/images/retool.png" alt="">
+                </a>
+                <a href="https://mockend.com" target="_blank">
+                  <img class="mockend" src="./assets/images/mockend.svg" alt="">
+                  </a>
+                  <a href="https://github.com/sponsors/typicode">Your company logo here</a>
+            </div>
+           </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 offset-3 try-json">
+            <h2>Try it</h2>
+            <p>Run this code here, in a console or from any site:</p>
+           <div class="fetch">
+            <div class="fetch-wrapper mx-5">
+              <span>fetch</span><strong>('https://jsonplaceholder.typicode.com/todos/1')</strong>
+               <br>
+                <div class="wrapper mx-3">
+                  <span>.then</span>(response => response <span>.json</span>()) <br>
+                  <span>.then</span>(json => console.log(<span>json</span>))
+                </div>
+            </div>
+           </div> 
+           <br>
+           <button class="btn btn-success p-2 px-4" id="runBtn" style="margin:20px 0;">Run script</button>
+           <br>
+           <br>
+           <div class="fetch-success">
+             <span class="mx-4" id="span">{  }</span>
+           </div>
+           <br>
+           <p id="run-message" class="">
+            Congrats you've made your first call to JSONPlaceholder! 😃 🎉
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 offset-3 use-json">
+            <h2>When to use</h2>
+            <p>JSONPlaceholder is a free online REST API that you can use <strong>whenever you need some fake data</strong>. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 offset-3 resource-json">
+            <h2>Resources</h2>
+            <p>JSONPlaceholder comes with a set of 6 common resources:</p>
+            <div class="resource-wrapper">
+              <div class="resource-group">
+                <a href="./link_HTML/posts.js">/posts</a>
+                <span>100 posts</span>
+              </div>
+              <div class="resource-group">
+                <a href="./link_HTML/comments.js">/comments</a>
+                <span>500 comments</span>
+              </div>
+              <div class="resource-group">
+                <a href="./link_HTML/albums.js">/albums</a>
+                <span>100 albums</span>
+              </div>
+              <div class="resource-group">
+                <a href="./link_HTML/photos.js">/photos</a>
+                <span>5000 photos</span>
+              </div>
+              <div class="resource-group">
+                <a href="./link_HTML/todos.js">/todos</a>
+                <span>200 todos</span>
+              </div>
+              <div class="resource-group">
+                <a href="./link_HTML/users.js">/users</a>
+                <span>10 users</span>
+              </div>
+            </div>
+            <br>
+            <strong>Note:</strong> <span class="note">resources have relations. For example: posts have many comments, albums have many photos, ... see guide for the full list.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 offset-3 resource-json">
+            <h2>Routes</h2>
+            <p>All HTTP methods are supported. You can use http or https for your requests.</p>
+            <div class="route-wrapper">
+              <div class="route-group">
+                <span>GET</span>
+                <a href="#">/posts</a>
+              </div>
+              <div class="route-group">
+                <span>GET</span>
+                <a href="#">/posts/1</a>
+              </div>
+              <div class="route-group">
+                <span>GET</span>
+                <a href="#">/posts/1/comments</a>
+              </div>
+              <div class="route-group">
+                <span>GET</span>
+                <a href="#">/comments?postId=1</a>
+              </div>
+              <div class="route-group">
+                <span>POST</span>
+                <a href="#">/posts</a>
+              </div>
+              <div class="route-group">
+                <span>PUT</span>
+                <a href="#">/posts/1</a>
+              </div>
+              <div class="route-group">
+                <span>PATCH</span>
+                <a href="#">/posts/1</a>
+              </div>
+              <div class="route-group">
+                <span>DELETE</span>
+                <a href="#">/posts/1</a>
+              </div>
+            </div>
+            <br>
+            <strong>Note:</strong> <span class="note">see guide for usage examples.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 offset-3 data-json">
+            <h2>Use your own data</h2>
+            <p>With our sponsor <a href="https://mockend.com">Mockend</a> and a simple GitHub repo, you can have your own fake online REST server in seconds.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 offset-3 footer-json">
+            <strong>You can sponsor this project (and others) on GitHub</strong>
+            <p>Coded and maintained with ❤️ by <a href="https://github.com/typicode">typicode</a> © 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#">
+        <div class="up">
+            <img src="./assets/images/up-arrow.gif" alt="">
+        </div>
+      </a>  
+
+      
+      
+ 
+      <script src="./jquery-3.7.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <script src="./main.js"></script>
+</body>
+</html>

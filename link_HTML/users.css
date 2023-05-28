@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 7px 60px;
+    background-color: rgb(59, 188, 111);
+}
+
+.nav-item {
+    padding: 0 16px;
+}
+
+.nav-item:hover {
+    background-color: rgb(229, 230, 225);
+    border-radius: 5px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.showImg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}

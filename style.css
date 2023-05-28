@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.collapse {
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-nav {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 0 4px;
+}
+
+.nav-item:hover {
+    background-color: rgb(23, 173, 227);
+    border-radius: 5px;
+}
+
+.header-json {
+    width: 68%;
+    margin: 0 auto;
+    padding: 20px 0 ;
+}
+
+.header-json h1 {
+    font-size: 52px;
+    color: #374151;
+    font-weight: 400;
+}
+
+.paragraph-group p {
+    font-size: 30px;
+}
+
+.free {
+    font-size: 27px;
+    color: #374151;
+}
+.powered {
+    font-size: 15px;
+    color: #374151;
+}
+
+.powered a {
+    color: #374156;
+}
+
+.powered a:hover {
+    text-decoration: none;
+}
+
+b {
+    color: #374156;
+}
+
+.sponsor-json {
+    width: 68%;
+    padding: 40px 0;
+    margin: 25px auto;
+}
+
+.sponsor-json h3 span {
+    font-size: 43px;
+    font-weight: 460;
+    margin: 22px 0;
+}
+
+.sponsor-json p {
+    font-size: 18px;
+    margin: 18px 0;
+}
+
+.sponsor-json .img-group .retool {
+    width: 190px;
+    height: 90px;
+    margin: 18px 0;
+}
+.sponsor-json .img-group .mockend {
+    width: 240px;
+    height: 140px;
+}
+
+.img-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-group a {
+    color: #374151;
+}
+.img-group a:hover {
+    text-decoration: none;
+}
+
+.fetch {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #2D2D2D;
+    padding: 35px 0;
+    color: #fff;
+}
+
+.fetch span {
+    color: #F08D49;
+}
+
+.fetch strong {
+    color: #79A957;
+}
+
+.fetch-success {
+    width: 100%;
+    background-color: #2D2D2D;
+    padding: 16px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.try-json, .use-json, .resource-json, .data-json, .footer-json {
+    width: 68%;
+    margin: 25px auto;   
+    padding: 20px 0;
+}
+
+.try-json h2, .use-json h2, .resource-json h2, .data-json h2 {
+    font-size: 38px;
+    font-weight: 460;
+}
+
+.try-json p {
+    font-size: 20px;
+}
+
+.use-json p, .resource-json p, .data-json p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.resource-wrapper, .route-wrapper {
+    margin: 30px 0;
+}
+
+.resource-group {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.route-group {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resource-group a, .route-group a {
+    color: #374151;
+}
+
+.resource-json strong {
+    font-size: 20px;
+}
+
+.resource-json .note {
+    font-size: 19px;
+}
+
+.footer-json p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#run-message {
+    display: none;
+}
+
+
+.up {
+    position: fixed;
+    right: 100px;
+    bottom: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+.up img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.up img:hover {
+    transform: scale(.9);
+}
+
+
+@media screen and (max-width:600px) {
+    .header-json {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .sponsor-json {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .try-json {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
